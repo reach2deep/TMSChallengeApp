@@ -19,7 +19,7 @@ export class HomePageComponent implements OnInit {
                private notif: NotificationsService,
               private userService: UserService,
               private authenticationService: AuthenticationService,
-              private userDetail: User) {
+              public userDetail: User) {
 
       // GET THE USER ID FROM THE LOCAL STORE
       this.currentUserId = JSON.parse(localStorage.getItem('userId'));
